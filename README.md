@@ -1,2 +1,2 @@
-# CMS-Bootstrap-php-mysql
-Cms for a clinic developed in bootstrap, php, mysql database, jquery
+# CMS-Bootstrap-php-mysql-jquery
+Cms and frontend ,for a clinic, developed in bootstrap, php, mysql, jquery
