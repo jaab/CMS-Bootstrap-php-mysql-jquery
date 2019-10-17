@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+     x                                                                         x
+     x  Copyright (c), 2019- jaab@DNM - Design New Markets                     x
+     x   Telemóvel: 919 768 329                                                x
+     x   E-mail: jaab@designewmarkets.com                                      x
+     X   Site:designewmarkets.com                                              x                      
+     x   Licensed under the IPV License                                        x
+     x                                                                         x
+     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+  
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="title" content="DNM | CLINICA FRONT END" />
+  <link rel="shortlink" href="https://dnm.viseu.tv/" />
+  <link rel="canonical" href="https://dnm.viseu.tv/" />
+  <meta name="description" content="Template responsive para Clinica,gratis para download" />
+  <meta name="keywords" content="template, clinica, bootstrap,responvive,gratis,download" />
+  <meta name="author" content="jaab@DNM">
+  <!-- ICON BROWSER -->
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  
+  <!-- CSS da  Página -->
+  <link href="css/clinica.css" rel="stylesheet">
+
+ 
+<style>
+ /*PROTOCOLOS GALERIA */ 
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+
+/*BOTÃO TOPO SCROLLING */
+  .btn-top {
+  position: fixed;
+  display:none;
+  bottom:5px;
+  right:5px;
+  top: 84%;
+  width: 65px;
+  height: 94px;
+  background: #0087bd;
+  z-index: 55;
+  cursor: pointer;
+  opacity: 0;
+  padding: 20px 0 0 14px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 2px -2px rgba(0, 59, 85, 0.5);
+  background-clip: border-box;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.btn-top:hover {
+  background: #02abee;
+}
+.btn-top span {
+  display: block;
+  background: url("img/bg-arrow.png") no-repeat;
+  width: 36px;
+  height: 34px;
+  margin-bottom: 11px;
+}
+.btn-top em {
+  font-family: 'roboto-bold-webfont', sans-serif;
+  display: block;
+  font-style: normal;
+  color: #fff;
+  font-size: 15px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  text-shadow: 0 -1px rgba(0, 76, 110, 1);
+}
+.btn-top-active {
+  opacity: 1;
+  right:0;
+}
+
+
+/*RESPONSIVE GOOGLE MAPS */
+.embed-responsive-100x400px{
+  padding-bottom: 400px;
+}
+
+/*RESPONSIVE VIDEO YOUTUBE */
+.youtube-contentor {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+.youtube-contentor iframe, .youtube-contentor object, .youtube-contentor embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+</style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- MENU - NAV-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container sticky-top">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="rounded" src="img/logo.png"></a>
+      <!-- BOTÃO PARA O MENU - RESPONSIVO-->
+      <button class="navbar-toggler navbar-toggler-right bg-info" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#saude">+ Saúde</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#marcacoes">Marcações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#especialidades">Especialidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#profissionais">Medicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contactos">Contactos</a>
+          </li>
+           <!--VOLTAR AO TOPO-->
+           <li class="nav-item"></li>
+           <a href="#page-top"  class="nav-link js-scroll-trigger" ><div class=" btn-top btn-top-active"><span></span><em>Top</em></div></a>
+          </li>
+          </ul>
+      </div>
+      <!--BOTÃO MY DNM - CMS-->
+      <div><button type="button" class="btn-sm rounded btn-info float-right"><a href="cms/" class="text-light">My DNM</button></a></button></div>
+    </div>
+  </nav>
+
+  <!-- BANNER PUBLICIDADE - CAROUSEL -->
+  <header>
+      <div class="bd-example bg-dark">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/top_bg2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>A SAÚDE VEM EM PRIMEIRO LUGAR!</h5>
+                  <p>Obrigado pela sua confiança.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/top_bg.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>APP-DNM-CLINIC BREVEMENTE!</h5>
+                  <p>Asua saúde num só clique</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </header>
+  <!--SAUDE - CARDS - EMBBED VIDEO YOUTUBE-->
+  <section class="page-section " id="saude">
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center py-5">
+        <h2 class="section-heading text-light">+saude</h2>
+           <!--EMBBED VIDEO YOUTUBE--> 
+          <div class="card bg-primary">
+          <div class="card-body youtube-contentor">
+          <iframe  allow="autoplay; encrypted-media"  src="https://www.youtube.com/embed/8xD5itPA940?autoplay=1&rel=0" allowfullscreen></iframe>
+          </div>
+          <div class="card-text text-light">DNM TV</div>
+          </div>
+            
+         </div>
+        </div>
+
+        <div class="row">
+        <div class="col-sm-12 text-center">
+             <!--SAUDE - CARDS-->
+            <div class="card-group">
+
+              <div class="card bg-primary mr-2">
+                <img src="img/unhas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-light">O que dizem as unhas sobre a sua saúde.</p>
+                  <p class="card-text"><small class="text-light">16 de Junho 2019</small></p>
+                </div>
+                <div class="card-header"><button type="button" class="btn-sm btn-info rounded">Saber mais</button></div>
+              </div>
+
+              <div class="card bg-primary mr-2">
+                  <img src="img/exercicio.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-light">Exercício físico: a melhor modalidade para cada problema.</p>
+                    <p class="card-text"><small class="text-light">21 de Junho 2019</small></p>
+                  </div>
+                  <div class="card-header"><button type="button" class="btn-sm btn-info rounded">Saber mais</button></div>
+                </div>
+
+              <div class="card bg-primary mr-2">
+                <img src="img/terapia.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text text-light">O seu filho precisa de terapia da fala?</p>
+                  <p class="card-text"><small class="text-light">26 de Junho 2019</small></p>
+                </div>
+                <div class="card-header"><button type="button" class="btn-sm btn-info rounded">Saber mais</button></div>
+              </div>
+
+            </div>
+
+          </div>  
+        </div>
+    </div>
+  </section>
+
+  <!-- MARCAÇÕES - LISTS GROUP - MODAL -->
+  <section class="bg-primary page-section" id="marcacoes">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase text-light"> Marcação de Consultas e Exames</h2>
+          <h3 class="section-subheading text-light">Utilize esta plataforma para a marcação de consultas e exames, de forma rápida e simples.</h3>
+          <div class="row">
+              <div class="col-lg-6 text-center py-3">
+                  <ul class="list-group">
+                    <li class="list-group-item active">Especialidades</li>
+                    <li class="list-group-item">Anestesia</li>
+                    <li class="list-group-item">Cardiologia</li>
+                    <li class="list-group-item">Cirurgia Geral</li>
+                    <li class="list-group-item">Cirurgia Pediátrica</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <ul class="list-group">
+                    <li class="list-group-item active">Exames Complementares</li>
+                    <li class="list-group-item">Análises Clínicas - Centro de colheita</li>
+                    <li class="list-group-item">Androscopia</li>
+                    <li class="list-group-item">Biópsia Prostática</li>
+                    <li class="list-group-item">Ecocardiografia</li>
+                  </ul>
+                </div>
+          </div>
+          <div class="row py-2">
+              <div class="col-sm-6 py-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Pedido Marcação</h5>
+                    <button type="button" class="btn-sm bg-info rounded text-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Marcação Consultas</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 py-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Pedido Marcação</h5>
+                    <button type="button" class="btn-sm bg-info rounded text-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Marcação Exames</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES - ACCORDION-->
+  <section class="page-section" id="especialidades">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-light">Especialidades</h2>
+          <h3 class="section-subheading text-light">Razoes Para nos perferir.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="accordion m-auto w-100" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Cirurgia Geral
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    A cirurgia geral é a especialidade médica cuja área de atuação compreende a cirurgia da cabeça e pescoço, a cirurgia da mama e endócrina (tiróide e suprarrenal), a Cirurgia abdominal e proctológica (anal), abarcando ainda alguns aspectos da patologia vascular, torácica e transplantação de órgãos.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Consulta de Neuropsicologia
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    A neuropsicologia cognitiva estuda o modo como alterações ao nível do cérebro (traumáticas ou de desenvolvimento) poderão modificar o comportamento e as capacidades cognitivas (e.g., memória, linguagem oral e escrita, cálculo, atenção, capacidades viso-espaciais, funções executivas, planeamento estratégico, destreza manual, raciocínio abstrato, etc.).
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Hematologia
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    A especialidade de Hematologia integra o atendimento na área clínica (consultas e internamento) sobretudo em Hematologia Geral, Hemato-Oncologia, Trombose ou Hemostase, Medicina Transfusional (dadores de sangue, processamento do sangue e do seus componentes) e os Laboratórios de Diagnóstico das Doenças Hematológicas.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Gastrenterologia
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Gastrenterologia provém do grego gastro (estômago) + entero (intestino) e é uma especialidade médica (não-cirúrgica) que envolve o estudo, diagnóstico e tratamento das Doenças do Aparelho Digestivo, que compreende o tubo digestivo propriamente dito - esófago, estômago, intestino delgado, intestino grosso (ou cólon) e recto, o fígado e vias biliares e o pâncreas.
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDICOS - CARDS-->
+  <section class="page-section" id="profissionais">
+    <div class="container">
+      
+        <div class="col-sm-12 text-center m-auto">
+        
+          <h2 class="section-heading text-light">Medicos</h2>
+          <h3 class="section-subheading text-light">São já alguns milhares os pacientes que nos confiam a sua saúde, confiança que muito nos honra.</h3>
+        
+          <div class="row">
+
+          <div class="card-group m-auto mb-2">
+            <div class="card" >
+              <div class="card-body" >
+                  <img src="img/doutor.png" alt="Ana Cavaleiro">
+                <h5 class="card-title">Ana Cavaleiro</h5>
+                <button type="button" class="btn-sm btn-info rounded" data-toggle="modal" data-target="#Modalmedico" data-whatever="@mdo">Marcar Consulta</button>
+              </div>
+           </div>
+          </div>
+
+          <div class="card-group  m-auto py-2">
+              <div class="card">
+                <div class="card-body">
+                    <img src="img/doutor.png" alt="Ana Cavaleiro">
+                  <h5 class="card-title">Ana Cavaleiro</h5>
+                  <button type="button" class="btn-sm btn-info rounded" data-toggle="modal" data-target="#Modalmedico" data-whatever="@mdo">Marcar Consulta</button>
+                </div>
+             </div>
+            </div>
+
+            <div class="card-group m-auto py-2">
+                <div class="card" >
+                  <div class="card-body">
+                      <img src="img/doutor.png" alt="Ana Cavaleiro">
+                    <h5 class="card-title">Ana Cavaleiro</h5>
+                    <button type="button" class="btn-sm btn-info rounded" data-toggle="modal" data-target="#Modalmedico" data-whatever="@mdo">Marcar Consulta</button>
+                  </div>
+               </div>
+              </div>
+    
+              <div class="card-group  m-auto py-2">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="img/doutor.png" alt="Ana Cavaleiro">
+                      <h5 class="card-title">Ana Cavaleiro</h5>
+                      <button type="button" class="btn-sm btn-info rounded" data-toggle="modal" data-target="#Modalmedico" data-whatever="@mdo">Marcar Consulta</button>
+                    </div>
+                 </div>
+                </div>
+
+                <div class="card-group m-auto py-2">
+                    <div class="card" >
+                      <div class="card-body">
+                          <img src="img/doutor.png"  alt="Ana Cavaleiro">
+                        <h5 class="card-title">Ana Cavaleiro</h5>
+                        <button type="button" class="btn-sm btn-info rounded" data-toggle="modal" data-target="#Modalmedico" data-whatever="@mdo">Marcar Consulta</button>
+                      </div>
+                   </div>
+                  </div>
+        
+                  <div class="card-group  m-auto py-2">
+                      <div class="card">
+                        <div class="card-body">
+                            <img src="img/doutor.png" alt="Ana Cavaleiro">
+                          <h5 class="card-title">Ana Cavaleiro</h5>
+                          <button type="button" class="btn-sm btn-info rounded" data-toggle="modal" data-target="#Modalmedico" data-whatever="@mdo">Marcar Consulta</button>
+                        </div>
+                     </div>
+                    </div>
+        </div>
+    
+     </div>
+   </div>
+  </section>
+
+  <!-- PROTOCOLOS - GALERIA -->
+  <section class="page-section bg-dark" id="galeria4">
+   <div class="container">
+    <div class="col-lg-12 text-center">
+    <h2 class="section-heading text-light">Protocolos</h2>
+    <div class="row">
+
+         <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+         <div class="carousel-inner" role="listbox">
+
+         <div class="carousel-item active">
+         <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(42).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(8).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(26).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(59).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(63).jpg"
+              alt="Card image cap">
+          </div>
+        </div>
+       </div>
+
+      </div>
+     </div>
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- CONTACTOS - FORM -->
+  <section class="page-section" id="contactos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">contacto</h2>
+          <h3 class="section-subheading text-light">Na DNM queremos assegurar um elevado grau de satisfação dos nossos clientes e familiares em todos os contactos que tenham com os nossos serviços.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Nome *" required="required" data-validation-required-message="Escrever nome.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Escrever email.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Telefone *" required="required" data-validation-required-message="Escrever telefone.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Msg *" required="required" data-validation-required-message="Escrever msg."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn bg-info text-light rounded" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAPS -->
+  <div class="container-fluid embed-responsive embed-responsive-100x400px">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96837.92170779378!2d-7.965578374947738!3d40.669891388903004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23363eebc35ccd%3A0xf6bfc08821e7449a!2sViseu!5e0!3m2!1spt-PT!2spt!4v1561412487222!5m2!1spt-PT!2spt" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+ 
+  <!-- FOOTER - SOCIAL BOTÕES - LINK EMAIL -->
+  <footer class="footer bg-dark">
+    <div class="container">
+      <!-- LINK EMAIL -->
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright text-white">Copyright &copy; <a href="mailto:jaab@designewmarkets.com">jaab@designewmarkets.com</a> 2019</span>
+        </div>
+        <!-- SOCIAL BOTÕES -->
+        <div class="col-md-4">
+            <a href="https://facebook.com" class="btn btn-social-icon btn-facebook rounded-circle"><span class="fa fa-facebook"></span></a>
+            <a href="https://linkedin.com" class="btn btn-social-icon btn-linkedin rounded-circle"><span class="fa fa-linkedin"></span></a>
+            <a href="https://twitter.com" class="btn btn-social-icon btn-twitter rounded-circle"><span class="fa fa-twitter"></span></a>
+        </div>
+
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Politica de privacidade</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <!--MODAL MARCAÇÕES/EXAMES-->
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Marcar Consulta/Exame</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Especialidade:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Medico:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Data:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-sm bg-secondary rounded text-light" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn-sm bg-info rounded text-light">Marcar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL MARCAÇÕES CONSULTAS MEDICO-->
+  <div class="modal fade" id="Modalmedico" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Marcar Consulta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Especialidade:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Medico:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Data:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-sm bg-secondary rounded text-light" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn-sm bg-info rounded text-light">Marcar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOTSTRAP  JAVASCRIPT -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- CLINIC JS -->
+  <script src="js/clinica.min.js"></script>
+
+  
+  <script>
+  /* PROTOCOLOS GALERIA */
+      $(function() {
+      var selectedClass = "";
+      $(".filter").click(function(){
+      selectedClass = $(this).attr("data-rel");
+      $("#gallery").fadeTo(100, 0.1);
+      $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+      setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('animation');
+      $("#gallery").fadeTo(300, 1);
+      }, 300);
+      });
+      });
+
+ /* BOTÃO VOLTAR AO TOPO JS */
+      jQuery(document).ready(function() {
+      var offset = 220;
+      var duration = 500;
+      jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+      jQuery('.btn-top').fadeIn(duration);
+      } else {
+      jQuery('.btn-top').fadeOut(duration);
+      }
+      });
+      
+      jQuery('.go-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+      })
+      });
+      </script>
+
+</body>
+
+</html>
